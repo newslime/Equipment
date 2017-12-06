@@ -1,0 +1,6119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<secs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="secs.xsd">
+
+  <itemTypes>
+    <itemType name="ABS" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACCESSMODE" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="ACDS" type="int2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="ACKA" type="boolean">
+      <format>boolean</format>
+    </itemType> 
+    <itemType name="ACKC3" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACKC5" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACKC6" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACKC7" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACKC7A" type="int1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="ACKC10" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ACKC13" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="AGENT" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="ALCD" type="uint1">
+      <format>binary</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="ALED" type="binary">
+      <format>binary</format>
+      <format>boolean</format>
+    </itemType>
+    <itemType name="ALID" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+  
+    <itemType name="ALIDARRAY" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    
+    <itemType name="ALTX" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="ATTRDATA" type="ascii">
+      <format>list
+        <list>
+          <item>ATTRID</item>
+          <item>ATTRDATA</item>
+        </list>
+      </format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ATTRID" type="ascii">
+      <format>ascii</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ATTRRELN" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="BCDS" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="BCEQU" type="ascii">
+      <format>ascii</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="BINLT" type="ascii">
+      <format>ascii</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="BLKDEF" type="uint1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="BPD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="BYTMAX" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CAACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="CARRIERACTION" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="CARRIERID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="CARRIERSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="CATTRDATA" type="ascii">
+      <format>list
+        <list>
+          <item>CATTRID</item>
+          <item>CATTRDATA</item>
+        </list>
+      </format>
+      <format>ascii</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CATTRID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="CCODE" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="CEED" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="CEID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CEPACK" type="uint1">
+      <format>list
+        <list>
+          <item>CPNAME</item>
+          <item>CEPVAL</item>
+        </list>
+      </format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="CEPVAL" type="ascii">
+      <format>list
+        <list>
+          <item>CPNAME</item>
+          <item>CEPVAL</item>
+        </list>
+      </format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CKPNT" type="uint4">
+      <format>uint4</format>
+    </itemType>
+    <itemType name="CMDA" type="uint1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="CMDMAX" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="COLCT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="COLHDR" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="COMMACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="CPACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="CPNAME" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CPVAL" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="CSAACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="CTLJOBCMD" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="CTLJOBID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DATA" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DATAACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="DATAID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="DATALENGTH" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="DATASEG" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DATASRC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DATLC" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="DRACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="DSID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="DSNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DSPER" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DUTMS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="DVNAME" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="DVVAL" type="ascii">
+      <format>list</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="EAC" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ECDEF" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ECID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ECMAX" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ECMIN" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ECNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="ECV" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="EDID" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="EMID" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EPD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="EQNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="ERACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ERRCODE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ERRTEXT" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="ERRW7" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EVNTSRC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EXID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EXMESSAGE" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EXRECVRA" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="EXTYPE" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="FCNID" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="FFROT" type="uint2">
+      <format>uint2</format>
+    </itemType>
+    <itemType name="FILDAT" type="ascii">
+      <format>ascii</format>
+      <format>binary</format>
+    </itemType>
+    <itemType name="FNLOC" type="uint2">
+      <format>uint2</format>
+    </itemType>
+    <itemType name="FRMLEN" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="GRANT" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="GRANT6" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="GRNT1" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="HANDLE" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="HCACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="HOACK" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="HOCANCELACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="HOCMDNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="HOHALTACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="IACDS" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="IBCDS" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="IDTYP" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="INPTN" type="binary">
+      <format>binary</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="JOBACTION" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="LENGTH" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="LIMITACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="LIMITID" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="LIMITMAX" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="LIMITMIN" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="LINKID" type="uint4">
+      <format>uint4</format>
+    </itemType>
+    <itemType name="LLIM" type="uint4">
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="LOC" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="LOCID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="LOWERDB" type="ascii">
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="LRACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="LVACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MAPER" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MAPFT" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MCINDEX" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="MDACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MDLN" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="MEXP" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="MF" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="MHEAD" type="ascii">
+      <format>ascii</format>
+      <format>binary</format>
+    </itemType>
+    <itemType name="MID" type="ascii">
+      <format>ascii</format>
+      <format>binary</format>
+    </itemType>
+    <itemType name="MIDAC" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MIDRA" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="MLCL" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="MMODE" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="NACDS" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="NBCDS" type="uint2">
+      <format>int2</format>
+      <format>uint2</format>
+    </itemType>
+    <itemType name="NULBC" type="ascii">
+      <format>ascii</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="OBJACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="OBJCMD" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="OBJID" type="ascii">
+      <format>ascii</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="OBJSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="OBJTOKEN" type="uint4">
+      <format>uint4</format>
+    </itemType>
+    <itemType name="OBJTOKEN" type="uint4">
+      <format>uint4</format>
+    </itemType>
+    <itemType name="OBJTYPE" type="ascii">
+      <format>ascii</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="OFLACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="ONLACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="OPID" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ORLOC" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="OUTPTN" type="binary">
+      <format>binary</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="PARAMNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PARAMVAL" type="ascii">
+      <format>list</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PDFLT" type="ascii">
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PFCD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="PGRPACTION" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PMAX" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PODID" type="ascii">
+      <format>ascii</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PORTACTION" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PORTGRPNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PPARM" type="ascii">
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PPBODY" type="binary">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PPGNT" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="PPID" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PRAXI" type="binary">
+      <format>binary</format>
+    </itemType>
+     <itemType name="PRCMDNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+     <itemType name="PRDCT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PREVENTID" type="uint4">
+      <format>uintx</format>
+    </itemType>
+     <itemType name="PRJOBID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="PRJOBMILESTONE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PRJOBSPACE" type="uint2">
+      <format>uint2</format>
+    </itemType>
+    <itemType name="PRMTRLORDER" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="PRPAUSEEVENT" type="list">
+      <format>list</format>
+    </itemType>
+    <itemType name="PRPROCESSSTART" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="PRRECIPEMETHOD" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="PRSTATE" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="PTN" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="QUA" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RAC" type="uint1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RCMD" type="ascii">
+      <format>ascii</format>
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RCPATTRDATA" type="ascii">
+      <format>list
+        <list>
+          <item>RCPATTRID</item>
+          <item>RCPATTRDATA</item>
+        </list>
+      </format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RCPATTRID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPBODY" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RCPCLASS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPCMD" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RCPDEL" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RCPDESCLTH" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RCPDESCNM" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPDESCTIME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPNEWID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPOWCODE" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RCPPARNM" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPPARRULE" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPPARVAL" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RCPRENAME" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RCPSECCODE" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RCPSECNM" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RCPSTAT" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RCPUPDT" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RCPVERS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="READLN" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RECLEN" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="REFP" type="int4">
+      <format>intx</format>
+    </itemType>
+    <itemType name="REPGSZ" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RESC" type="uint1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RESPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RESV" type="uint4">
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RETICLEID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RETPLACEINSTR" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RETREMOVERINSTR" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RIC" type="uint1">
+      <format>int1</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RMACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RMCHGSTAT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RMCHGTYPE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RMDATASIZE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RMGRNT" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RMNEWNS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RMNSCMD" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RMNSSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RMRECSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RMREQUESTOR" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RMSEGSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RMSPACE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ROWCT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RPMACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RPMDESTLOC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RPMSOURTLOC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="RPSEL" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RPTID" type="uint4">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="RPTOC" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RQCMD" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RQPAR" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="RRACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RSACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RSDA" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RSDC" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="RSINF" type="int4">
+      <format>intx</format>
+    </itemType>
+    <itemType name="RSPACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="RTYPE" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SDACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SDBIN" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SEQNUM" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SFCD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SHEAD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SLOTID" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="SMPLN" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SOFTREV" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="SPAACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SPD" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SPID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="SPNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="SPR" type="ascii">
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SPVAL" type="ascii">
+      <format>list
+        <list>
+          <item>SPNAME</item>
+          <item>SPVAL</item>
+        </list>
+      </format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SSACK" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="SSCMD" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="STATUS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="STATUSLIST" type="list">
+      <format>list</format>
+    </itemType>
+    <itemType name="STEMP" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="STIME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="STRACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="STRID" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="STRP" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SV" type="ascii">
+      <format>list</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SVCACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="SVCNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="SVID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="SVNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TARGETID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TARGETSPEC" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TBLACK" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TBLCMD" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TBLELT" type="ascii">
+      <format>list</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TBLID" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TBLTYP" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TEXT" type="ascii">
+      <format>binary</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TIAACK" type="uint1">
+      <format>binary</format>
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TIACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="TID" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="TIME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TIMEFORMAT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TIMESTAMP" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TOTSMP" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRACK" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="TRATOMICID" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRAUTOD" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="TRAUTOSTART" type="boolean">
+      <format>boolean</format>
+    </itemType>
+    <itemType name="TRCMDNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TRDIR" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TRID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRJOBID" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="TRJOBMS" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TRJOBNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TRLINK" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRLOCATION" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TROBJNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TROBJTYPE" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRPORT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRPTNR" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TRPTPORT" type="uint4">
+      <format>uintx</format>
+    </itemType>
+    <itemType name="TRRCP" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="TRROLE" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TRSPER" type="float8">
+      <format>floatx</format>
+    </itemType>
+    <itemType name="TRTYPE" type="uint1">
+      <format>uint1</format>
+    </itemType>
+    <itemType name="TSIP" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="TSOP" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="TTC" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="ULIM" type="uint4">
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="UNFLEN" type="uint4">
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="UNITS" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="UPPERDB" type="ascii">
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="V" type="ascii">
+      <format>list</format>
+      <format>binary</format>
+      <format>boolean</format>
+      <format>ascii</format>
+      <format>intx</format>
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="VID" type="ascii">
+      <format>ascii</format>
+      <format>intx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="DVVALNAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="CENAME" type="ascii">
+      <format>ascii</format>
+    </itemType>
+    <itemType name="VLAACK" type="binary">
+      <format>binary</format>
+    </itemType>
+    <itemType name="XDIES" type="uint4">
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+    <itemType name="XYPOS" type="int4">
+      <format>intx</format>
+    </itemType>
+    <itemType name="YDIES" type="uint4">
+      <format>floatx</format>
+      <format>uintx</format>
+    </itemType>
+  </itemTypes>
+
+  <messages>
+    <message sf="S1F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S1F1" reply="true" dir="BOTH" category="CONTROL">
+      <body/>
+    </message>
+
+    <message sf="S1F2" dir="BOTH" category="CONTROL">
+      <body>
+        <list>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F3" reply="true" dir="HtoE" category="INFO">
+      <body>
+        <list>
+          <item>SVID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F4" dir="EtoH" multi="YES" category="INFO">
+      <body>
+        <list>
+          <item>SV</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F5" reply="true" dir="HtoE">
+      <body>
+        <item>SFCD</item>
+      </body>
+    </message>
+
+    <message sf="S1F6" dir="EtoH" multi="YES">
+      <body>
+        <item>SFCD</item>
+      </body>
+    </message>
+
+    <message sf="S1F7" reply="true" dir="HtoE">
+      <body>
+        <item>SFCD</item>
+      </body>
+    </message>
+
+    <message sf="S1F8" dir="EtoH" multi="YES">
+      <body/>
+    </message>
+
+    <message sf="S1F9" reply="true" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S1F10" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>TSIP</item>
+          <item>TSOP</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F11" reply="true" dir="HtoE" category="INFO">
+      <body>
+        <list>
+          <item>SVID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F12" dir="EtoH" multi="YES" category="INFO">
+      <body>
+        <list>
+          <list>
+            <item>SVID</item>
+            <item>SVNAME</item>
+            <item>UNITS</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F13" reply="true" dir="BOTH" category="COMMUNICATION">
+      <body>
+        <list>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F14" dir="BOTH" category="COMMUNICATION">
+      <body>
+        <list>
+          <item>COMMACK</item>
+          <list>
+            <item>MDLN</item>
+            <item>SOFTREV</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F15" reply="true" dir="HtoE" category="CONTROL">
+      <body/>
+    </message>
+
+    <message sf="S1F16" dir="EtoH" category="CONTROL">
+      <body>
+        <item>OFLACK</item>
+      </body>
+    </message>
+
+    <message sf="S1F17" reply="true" dir="HtoE" category="CONTROL">
+      <body/>
+    </message>
+
+    <message sf="S1F18" dir="EtoH" category="CONTROL">
+      <body>
+        <item>ONLACK</item>
+      </body>
+    </message>
+
+    <message sf="S1F19" reply="true" dir="BOTH">
+      <body>
+        <list>
+          <item>OBJTYPE</item>
+          <list>
+            <item>OBJID</item>
+          </list>
+          <list>
+            <item>ATTRID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F20" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F21" reply="true" dir="HtoE">
+      <body>
+        <list>
+          <item>VID</item>
+        </list>
+      </body>
+    </message>
+    
+    <message sf="S1F22" dir="EtoH" multi="YES" >
+      <body>
+        <list>
+          <list>
+            <item>VID</item>
+            <item>DVVALNAME</item>
+            <item>UNITS</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F23" reply="true" dir="HtoE">
+      <body>
+        <list>
+          <item>CEID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S1F24" dir="EtoH" multi="YES" >
+      <body>
+        <list>
+          <list>
+            <item>CEID</item>
+            <item>CENAME</item>
+            <list>
+              <item>VID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+
+    <!-- STREAM 2 -->
+    <message sf="S2F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S2F1" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>SPID</item>
+          <item>LENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F2" dir="BOTH">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S2F3" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <item>SPD</item>
+      </body>
+    </message>
+
+    <message sf="S2F4" dir="BOTH">
+      <body>
+        <item>SPAACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F5" dir="BOTH" reply="true">
+      <body>
+        <item>SPID</item>
+      </body>
+    </message>
+
+  <message sf="S2F6" dir="BOTH" multi="YES">
+      <body>
+        <item>SPD</item>
+      </body>
+    </message>
+
+  <message sf="S2F7" dir="HtoE" reply="true">
+      <body>
+        <item>SPID</item>
+      </body>
+    </message>
+
+    <message sf="S2F8" dir="EtoH">
+      <body>
+        <item>CSAACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F9" dir="HtoE" reply="true">
+      <body>
+        <item>SPID</item>
+      </body>
+    </message>
+
+    <message sf="S2F10" dir="EtoH" multi="YES">
+      <body>
+        <item>SPR</item>
+      </body>
+    </message>
+
+    <message sf="S2F11" dir="BOTH" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S2F12" dir="BOTH">
+      <body>
+        <list>
+          <item>SPID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F13" dir="HtoE" reply="true" category="INFO">
+      <body>
+        <list>
+          <item>ECID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F14" dir="EtoH" multi="YES" category="INFO">
+      <body>
+        <list>
+          <item>ECV</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F15" dir="HtoE" reply="true" category="INFO">
+      <body>
+        <list>
+          <list>
+            <item>ECID</item>
+            <item>ECV</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F16" dir="EtoH" category="INFO">
+      <body>
+        <item>EAC</item>
+      </body>
+    </message>
+
+    <message sf="S2F17" dir="BOTH" reply="true" category="INFO">
+      <body/>
+    </message>
+
+    <message sf="S2F18" dir="BOTH" category="INFO">
+      <body>
+        <item>TIME</item>
+      </body>
+    </message>
+
+    <message sf="S2F19" dir="HtoE" reply="true">
+      <body>
+        <item>RIC</item>
+      </body>
+    </message>
+
+    <message sf="S2F20" dir="EtoH">
+      <body>
+        <item>RAC</item>
+      </body>
+    </message>
+
+    <message sf="S2F21" dir="HtoE" reply="true">
+      <body>
+        <item>RCMD</item>
+      </body>
+    </message>
+
+    <message sf="S2F22" dir="EtoH">
+      <body>
+        <item>CMDA</item>
+      </body>
+    </message>
+
+    <message sf="S2F23" dir="HtoE" multi="YES" reply="true" category="TRACE">
+      <body>
+        <list>
+          <item>TRID</item>
+          <item>DSPER</item>
+          <item>TOTSMP</item>
+          <item>REPGSZ</item>
+          <list>
+            <item>SVID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F24" dir="EtoH" category="TRACE">
+      <body>
+        <item>TIAACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F25" dir="BOTH" reply="true">
+      <body>
+        <item>ABS</item>
+      </body>
+    </message>
+
+    <message sf="S2F26" dir="BOTH">
+      <body>
+        <item>ABS</item>
+      </body>
+    </message>
+
+    <message sf="S2F27" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>LOC</item>
+          <item>PPID</item>
+          <list>
+            <item>MID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F28" dir="EtoH">
+      <body>
+        <item>CMDA</item>
+      </body>
+    </message>
+
+    <message sf="S2F29" dir="HtoE" reply="true" category="INFO">
+      <body>
+        <list>
+          <item>ECID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F30" dir="EtoH" multi="YES" category="INFO">
+      <body>
+        <list>
+          <list>
+            <item>ECID</item>
+            <item>ECNAME</item>
+            <item>ECMIN</item>
+            <item>ECMAX</item>
+            <item>ECDEF</item>
+            <item>UNITS</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F31" dir="HtoE" reply="true" category="INFO">
+      <body>
+        <item>TIME</item>
+      </body>
+    </message>
+
+    <message sf="S2F32" dir="EtoH" category="INFO">
+      <body>
+        <item>TIACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F33" dir="HtoE" multi="YES" reply="true" category="EVENT">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <item>VID</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F34" dir="EtoH" category="EVENT">
+      <body>
+        <item>DRACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F35" dir="HtoE" multi="YES" reply="true" category="EVENT">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>CEID</item>
+              <list>
+                <item>RPTID</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F36" dir="EtoH" category="EVENT">
+      <body>
+        <item>LRACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F37" dir="HtoE" reply="true" category="EVENT">
+      <body>
+        <list>
+          <item>CEED</item>
+          <list>
+            <item>CEID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F38" dir="EtoH" category="EVENT">
+      <body>
+        <item>ERACK</item>
+      </body>
+    </message>
+
+    <message sf="S2F39" dir="HtoE" reply="true" multi="INQUIRE" category="INFO">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F40" dir="EtoH" multi="GRANT" category="INFO">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S2F41" dir="HtoE" reply="true" category="ACCESS">
+      <body>
+        <list>
+          <item>RCMD</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F42" dir="EtoH" category="ACCESS">
+      <body>
+        <list>
+          <item>HCACK</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CPACK</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F43" dir="HtoE" reply="true" category="SPOOL">
+      <body>
+        <list>
+          <list>
+            <item>STRID</item>
+            <list>
+              <item>FCNID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F44" dir="EtoH" multi="YES" category="SPOOL">
+      <body>
+        <list>
+          <item>RSPACK</item>
+          <list>
+            <list>
+              <item>STRID</item>
+              <item>STRACK</item>
+              <list>
+                <item>FCNID</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F45" dir="HtoE" multi="YES" reply="true" category="LIMIT">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>VID</item>
+              <list>
+                <list>
+                  <item>LIMITID</item>
+                  <list>
+                    <item>UPPERDB</item>
+                    <item>LOWERDB</item>
+                  </list>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F46" dir="EtoH" multi="YES" category="LIMIT">
+      <body>
+        <list>
+          <item>VLAACK</item>
+          <list>
+            <list>
+              <item>VID</item>
+              <item>LVACK</item>
+              <list>
+                <item>LIMITID</item>
+                <item>LIMITACK</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F47" dir="HtoE" reply="true" category="LIMIT">
+      <body>
+        <list>
+          <item>VID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F48" dir="EtoH" multi="YES" category="LIMIT">
+      <body>
+        <list>
+          <list>
+            <item>VID</item>
+            <list>
+              <item>UNITS</item>
+              <item>LIMITMIN</item>
+              <item>LIMITMAX</item>
+              <list>
+                <list>
+                  <item>LIMITID</item>
+                  <item>UPPERDB</item>
+                  <item>LOWERDB</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F49" dir="HtoE" multi="YES" reply="true" category="ACCESS">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>RCMD</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CEPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S2F50" dir="EtoH" multi="YES" category="ACCESS">
+      <body>
+        <list>
+          <item>HCACK</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CEPACK</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S3F1" dir="HtoE" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S3F2" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>MF</item>
+          <list>
+            <list>
+              <item>LOC</item>
+              <item>QUA</item>
+              <item>MID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F3" dir="HtoE" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S3F4" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>MF</item>
+          <list>
+            <list>
+              <item>TTC</item>
+              <item>QUA</item>
+              <item>MID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F5" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MF</item>
+          <item>QUA</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F6" dir="HtoE">
+      <body>
+        <item>ACKC3</item>
+      </body>
+    </message>
+
+    <message sf="S3F7" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MF</item>
+          <item>QUA</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F8" dir="HtoE">
+      <body>
+        <item>ACKC3</item>
+      </body>
+    </message>
+
+    <message sf="S3F9" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>EMID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F10" dir="HtoE">
+      <body>
+        <item>ACKC3</item>
+      </body>
+    </message>
+
+    <message sf="S3F11" dir="EtoH" reply="true">
+      <body>
+        <item>PTN</item>
+      </body>
+    </message>
+
+    <message sf="S3F12" dir="HtoE">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MIDRA</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F13" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F14" dir="EtoH">
+      <body>
+        <item>MIDAC</item>
+      </body>
+    </message>
+
+    <message sf="S3F15" dir="HtoE" multi="INQUIRE" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F16" multi="GRANT" dir="EtoH">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S3F17" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CARRIERACTION</item>
+          <item>CARRIERID</item>
+          <item>PTN</item>
+          <list>
+            <list>
+              <item>CATTRID</item>
+              <item>CATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F18" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F19" dir="HtoE" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S3F20" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F21" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>PORTGRPNAME</item>
+          <item>ACCESSMODE</item>
+          <list>
+            <item>PTN</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F22" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F23" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>PGRPACTION</item>
+          <item>PORTGRPNAME</item>
+          <list>
+            <list>
+              <item>PARAMNAME</item>
+              <item>PARAMVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F24" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F25" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>PORTACTION</item>
+          <item>PTN</item>
+          <list>
+            <list>
+              <item>PARAMNAME</item>
+              <item>PARAMVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F26" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F27" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>ACCESSMODE</item>
+          <list>
+            <item>PTN</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F28" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>PTN</item>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F29" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>LOCID</item>
+          <item>CARRIERSPEC</item>
+          <item>DATASEG</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F30" dir="EtoH">
+      <body>
+        <list>
+          <item>DATA</item>
+          <list>
+            <item>CAACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F31" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>LOCID</item>
+          <item>CARRIERSPEC</item>
+          <item>DATASEG</item>
+          <item>DATALENGTH</item>
+          <item>DATA</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F32" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F33" dir="HtoE" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S3F34" dir="EtoH">
+      <body>
+        <list>
+          <item>CAACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F35" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>JOBACTION</item>
+          <item>PODID</item>
+          <item>INPTN</item>
+          <item>OUTPTN</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <list>
+              <item>RETICLEID</item>
+              <item>RETREMOVERINSTR</item>
+              <list>
+                <list>
+                  <item>ATTRID</item>
+                  <item>ATTRDATA</item>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <list>
+              <item>RETICLEID</item>
+              <item>RETPLACEINSTR</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S3F36" dir="EtoH">
+      <body>
+        <list>
+          <item>RPMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F0" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S4F1" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F2" dir="BOTH">
+      <body>
+        <item>RSACK</item>
+      </body>
+    </message>
+
+    <message sf="S4F3" dir="BOTH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F5" dir="BOTH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F7" dir="BOTH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F9" dir="EtoH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F11" dir="EtoH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F13" dir="EtoH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F15" dir="EtoH">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F17" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>PTN</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F18" dir="BOTH">
+      <body>
+        <item>RRACK</item>
+      </body>
+    </message>
+
+    <message sf="S4F19" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <item>TRJOBNAME</item>
+            <list>
+              <list>
+                <item>TRLINK</item>
+                <item>TRPORT</item>
+                <item>TROBJNAME</item>
+                <item>TROBJTYPE</item>
+                <item>TRROLE</item>
+                <item>TRRCP</item>
+                <item>TRPTNR</item>
+                <item>TRPTPORT</item>
+                <item>TRDIR</item>
+                <item>TRTYPE</item>
+                <item>TRLOCATION</item>
+                <item>TRAUTOSTART</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F20" dir="EtoH">
+      <body>
+        <list>
+          <item>TRJOBID</item>
+          <list>
+            <item>TRATOMICID</item>
+          </list>
+          <list>
+            <item>TRACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F21" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TRJOBID</item>
+          <item>TRCMDNAME</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F22" dir="EtoH">
+      <body>
+        <list>
+          <item>TRACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F23" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>TRJOBID</item>
+          <item>TRJOBNAME</item>
+          <item>TRJOBMS</item>
+          <list>
+            <item>TRACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F24" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S4F25" dir="HtoE" reply="true" multi="INQUIRE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F26" dir="EtoH" multi="GRANT">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S4F27">
+      <body>
+        <list>
+          <item>EQNAME</item>
+          <list>
+            <item>TRLINK</item>
+            <item>TRPORT</item>
+            <item>TROBJNAME</item>
+            <item>TROBJTYPE</item>
+            <item>TRROLE</item>
+            <item>TRPTNR</item>
+            <item>TRPTPORT</item>
+            <item>TRDIR</item>
+            <item>TRTYPE</item>
+            <item>TRLOCATION</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F29">
+      <body>
+        <list>
+          <item>TRLINK</item>
+          <item>MCINDEX</item>
+          <item>HOCMDNAME</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F31">
+      <body>
+        <list>
+          <item>TRLINK</item>
+          <item>MCINDEX</item>
+          <list>
+            <item>HOACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F33">
+      <body>
+        <list>
+          <item>TRLINK</item>
+          <list>
+            <item>HOACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F35">
+      <body>
+        <item>TRLINK</item>
+      </body>
+    </message>
+
+    <message sf="S4F37">
+      <body>
+        <list>
+          <item>TRLINK</item>
+          <item>HOCANCELACK</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S4F39">
+      <body>
+        <item>TRLINK</item>
+      </body>
+    </message>
+
+    <message sf="S4F41">
+      <body>
+        <list>
+          <item>TRLINK</item>
+          <item>HOHALTACK</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S5F1" dir="EtoH" reply="true" category="ALARM">
+      <body>
+        <list>
+          <item>ALCD</item>
+          <item>ALID</item>
+          <item>ALTX</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F2" dir="HtoE" category="ALARM">
+      <body>
+        <item>ACKC5</item>
+      </body>
+    </message>
+
+    <message sf="S5F3" dir="HtoE" reply="true" category="ALARM">
+      <body>
+        <list>
+          <item>ALED</item>
+          <list>
+              <item>ALID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F4" dir="EtoH" category="ALARM">
+      <body>
+        <item>ACKC5</item>
+      </body>
+    </message>
+
+    <message sf="S5F5" dir="HtoE" reply="true" category="ALARM">
+      <body>
+        <item>ALIDARRAY</item>
+      </body>
+    </message>
+
+    <message sf="S5F6" dir="EtoH" multi="YES" category="ALARM">
+      <body>
+        <list>
+          <list>
+            <item>ALCD</item>
+            <item>ALID</item>
+            <item>ALTX</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F7" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S5F8" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <item>ALCD</item>
+            <item>ALID</item>
+            <item>ALTX</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F9" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>TIMESTAMP</item>
+          <item>EXID</item>
+          <item>EXTYPE</item>
+          <item>EXMESSAGE</item>
+          <list>
+            <item>EXRECVRA</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F10" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S5F11" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>TIMESTAMP</item>
+          <item>EXID</item>
+          <item>EXTYPE</item>
+          <item>EXMESSAGE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F12" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S5F13" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>EXID</item>
+          <item>EXRECVRA</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F14" dir="HtoE">
+      <body>
+        <list>
+          <item>EXID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F15" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>TIMESTAMP</item>
+          <item>EXID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S5F16" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S5F17" dir="HtoE" reply="true">
+      <body>
+        <item>EXID</item>
+      </body>
+    </message>
+
+    <message sf="S5F18" dir="EtoH">
+      <body>
+        <list>
+          <item>EXID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S6F1" dir="EtoH" reply="true" category="TRACE">
+      <body>
+        <list>
+          <item>TRID</item>
+          <item>SMPLN</item>
+          <item>STIME</item>
+          <list>
+            <item>SV</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F2" dir="HtoE" category="TRACE">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F3" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>DSID</item>
+              <list>
+                <list>
+                  <item>DVNAME</item>
+                  <item>DVVAL</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F4" dir="HtoE">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F5" dir="EtoH" reply="true" multi="INQUIRE" category="INFO">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F6" dir="HtoE" multi="GRANT" category="INFO">
+      <body>
+        <item>GRANT6</item>
+      </body>
+    </message>
+
+    <message sf="S6F7" dir="HtoE" reply="true">
+      <body>
+        <item>DATAID</item>
+      </body>
+    </message>
+
+    <message sf="S6F8" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>DSID</item>
+              <list>
+                <list>
+                  <item>DVNAME</item>
+                  <item>DVVAL</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F9" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>PFCD</item>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>DSID</item>
+              <list>
+                <item>DVVAL</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F10" dir="HtoE">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F11" dir="EtoH" multi="YES" reply="true" category="EVENT">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <item>V</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F12" dir="HtoE" category="EVENT">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F13" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <list>
+                  <item>VID</item>
+                  <item>V</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F14" dir="HtoE">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F15" dir="HtoE" reply="true" category="EVENT">
+      <body>
+        <item>CEID</item>
+      </body>
+    </message>
+
+    <message sf="S6F16" dir="EtoH" multi="YES" category="EVENT">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <item>V</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F17" dir="HtoE" reply="true">
+      <body>
+        <item>CEID</item>
+      </body>
+    </message>
+
+    <message sf="S6F18" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>CEID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <list>
+                  <item>VID</item>
+                  <item>V</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F19" dir="HtoE" reply="true" category="EVENT">
+      <body>
+        <item>RPTID</item>
+      </body>
+    </message>
+
+    <message sf="S6F20" dir="EtoH" multi="YES" category="EVENT">
+      <body>
+        <list>
+          <item>V</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F21" dir="HtoE" reply="true">
+      <body>
+        <item>RPTID</item>
+      </body>
+    </message>
+
+    <message sf="S6F22" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <item>VID</item>
+            <item>V</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F23" dir="HtoE" reply="true" category="SPOOL">
+      <body>
+        <item>RSDC</item>
+      </body>
+    </message>
+
+    <message sf="S6F24" dir="EtoH" category="SPOOL">
+      <body>
+        <item>RSDA</item>
+      </body>
+    </message>
+
+    <message sf="S6F25" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OPID</item>
+          <item>LINKID</item>
+          <item>RCPSPEC</item>
+          <item>RMCHGSTAT</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F26" dir="BOTH">
+      <body>
+        <item>ACKC6</item>
+      </body>
+    </message>
+
+    <message sf="S6F27" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>TRID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <item>V</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S6F28" dir="HtoE">
+      <body>
+        <item>TRID</item>
+      </body>
+    </message>
+
+    <message sf="S6F29" dir="HtoE">
+      <body>
+        <item>TRID</item>
+      </body>
+    </message>
+
+    <message sf="S6F30" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>TRID</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <list>
+                <item>V</item>
+              </list>
+            </list>
+          </list>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S7F1" dir="BOTH" reply="true" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>LENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F2" dir="BOTH" category="PROCPROG">
+      <body>
+        <item>PPGNT</item>
+      </body>
+    </message>
+
+    <message sf="S7F3" dir="BOTH" multi="YES" reply="true" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>PPBODY</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F4" dir="BOTH" category="PROCPROG">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F5" dir="BOTH" reply="true" category="PROCPROG">
+      <body>
+        <item>PPID</item>
+      </body>
+    </message>
+
+    <message sf="S7F6" dir="BOTH" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>PPBODY</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F7" dir="EtoH" reply="true">
+      <body>
+        <item>MID</item>
+      </body>
+    </message>
+
+    <message sf="S7F8" dir="HtoE">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F9" dir="BOTH" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S7F10" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <item>PPID</item>
+            <list>
+              <item>MID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F11" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <list>
+            <item>PPID</item>
+            <list>
+              <item>MID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F12" dir="EtoH">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F13" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <list>
+            <item>PPID</item>
+            <list>
+              <item>MID</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F14" dir="EtoH">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F15" dir="HtoE" reply="true">
+      <body>
+        <item>MMODE</item>
+      </body>
+    </message>
+
+    <message sf="S7F16" dir="EtoH">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F17" dir="HtoE" reply="true" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F18" dir="EtoH" category="PROCPROG">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F19" dir="HtoE" reply="true" category="PROCPROG">
+      <body/>
+    </message>
+
+    <message sf="S7F20" dir="EtoH" multi="YES" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F21" dir="HtoE" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S7F22" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+          <item>CMDMAX</item>
+          <item>BYTMAX</item>
+          <list>
+            <list>
+              <item>CCODE</item>
+              <item>CNAME</item>
+              <item>RQCMD</item>
+              <item>BLKDEF</item>
+              <item>BCDS</item>
+              <item>IBCDS</item>
+              <item>NBCDS</item>
+              <item>ACDS</item>
+              <item>IACDS</item>
+              <item>NACDS</item>
+              <list>
+                <item>PNAME</item>
+                <item>RQPAR</item>
+                <item>PDFLT</item>
+                <item>PMAX</item>
+                <item>LLIM</item>
+                <item>ULIM</item>
+                <item>UNITS</item>
+                <item>RESC</item>
+                <item>RESV</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F23" dir="BOTH" multi="YES" reply="true" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+          <list>
+            <list>
+              <item>CCODE</item>
+              <list>
+                <item>PPARM</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F24" dir="BOTH" category="PROCPROG">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F25" dir="BOTH" reply="true" category="PROCPROG">
+      <body>
+        <item>PPID</item>
+      </body>
+    </message>
+
+    <message sf="S7F26" dir="BOTH" multi="YES" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+          <list>
+            <list>
+              <item>CCODE</item>
+              <list>
+                <item>PPARM</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F27" dir="EtoH" multi="YES" reply="true" category="PROCPROG">
+      <body>
+        <list>
+          <item>PPID</item>
+          <list>
+            <list>
+              <item>ACKC7A</item>
+              <item>SEQNUM</item>
+              <item>ERRW7</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F28" dir="HtoE" category="PROCPROG">
+      <body/>
+    </message>
+
+    <message sf="S7F29" dir="EtoH" reply="true" category="PROCPROG">
+      <body>
+        <item>LENGTH</item>
+      </body>
+    </message>
+
+    <message sf="S7F30" dir="HtoE" category="PROCPROG">
+      <body>
+        <item>PPGNT</item>
+      </body>
+    </message>
+
+    <message sf="S7F31" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>MDLN</item>
+          <item>SOFTREV</item>
+          <list>
+            <list>
+              <item>CCODE</item>
+              <list>
+                <item>PPARM</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F32" dir="EtoH">
+      <body>
+        <item>ACKC7</item>
+      </body>
+    </message>
+
+    <message sf="S7F33" dir="BOTH" reply="true">
+      <body>
+        <item>PPID</item>
+      </body>
+    </message>
+
+    <message sf="S7F34" dir="BOTH">
+      <body>
+        <list>
+          <item>PPID</item>
+          <item>UNFLEN</item>
+          <item>FRMLEN</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S7F35" dir="BOTH" reply="true">
+      <body>
+        <item>MID</item>
+      </body>
+    </message>
+
+    <message sf="S7F36" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>PPID</item>
+          <item>PPBODY</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S8F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S8F1" dir="BOTH" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S8F2" dir="BOTH" multi="YES">
+      <body>
+        <item>BPD</item>
+      </body>
+    </message>
+
+    <message sf="S8F3" dir="BOTH" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S8F4" dir="BOTH" multi="YES">
+      <body>
+        <item>EPD</item>
+      </body>
+    </message>
+
+    <message sf="S9F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S9F1" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>MHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F3" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>MHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F5" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>MHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F7" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>MHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F9" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>SHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F11" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <item>MHEAD</item>
+      </body>
+    </message>
+
+    <message sf="S9F13" dir="EtoH" category="COMMUNICATION">
+      <body>
+        <list>
+          <item>MEXP</item>
+          <item>EDID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S10F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S10F1" dir="EtoH" reply="true" category="TERMINAL">
+      <body>
+        <list>
+          <item>TID</item>
+          <item>TEXT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S10F2" dir="HtoE" category="TERMINAL">
+      <body>
+        <item>ACKC10</item>
+      </body>
+    </message>
+
+    <message sf="S10F3" dir="HtoE" reply="true" category="TERMINAL">
+      <body>
+        <list>
+          <item>TID</item>
+          <item>TEXT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S10F4" dir="EtoH" category="TERMINAL">
+      <body>
+        <item>ACKC10</item>
+      </body>
+    </message>
+
+    <message sf="S10F5" dir="HtoE" multi="YES" reply="true" category="TERMINAL">
+      <body>
+        <list>
+          <item>TID</item>
+          <list>
+            <item>TEXT</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S10F6" dir="EtoH" category="TERMINAL">
+      <body>
+        <item>ACKC10</item>
+      </body>
+    </message>
+
+    <message sf="S10F7" dir="EtoH" reply="true" category="TERMINAL">
+      <body>
+        <item>TID</item>
+      </body>
+    </message>
+
+    <message sf="S10F9" dir="HtoE" reply="true">
+      <body>
+        <item>TEXT</item>
+      </body>
+    </message>
+
+    <message sf="S10F10" dir="EtoH">
+      <body>
+        <item>ACKC10</item>
+      </body>
+    </message>
+
+    <message sf="S11F0">
+      <body/>
+    </message>
+
+    <message sf="S12F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S12F1" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>FNLOC</item>
+          <item>FFROT</item>
+          <item>ORLOC</item>
+          <item>RPSEL</item>
+          <list>
+            <item>REFP</item>
+          </list>
+          <item>DUTMS</item>
+          <item>XDIES</item>
+          <item>YDIES</item>
+          <item>ROWCT</item>
+          <item>COLCT</item>
+          <item>NULBC</item>
+          <item>PRDCT</item>
+          <item>PRAXI</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F2" dir="HtoE">
+      <body>
+        <item>SDACK</item>
+      </body>
+    </message>
+
+    <message sf="S12F3" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>MAPFT</item>
+          <item>FNLOC</item>
+          <item>FFROT</item>
+          <item>ORLOC</item>
+          <item>PRAXI</item>
+          <item>BCEQU</item>
+          <item>NULBC</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F4" dir="HtoE">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>FNLOC</item>
+          <item>ORLOC</item>
+          <item>RPSEL</item>
+          <list>
+            <item>REFP</item>
+          </list>
+          <item>DUTMS</item>
+          <item>XDIES</item>
+          <item>YDIES</item>
+          <item>ROWCT</item>
+          <item>COLCT</item>
+          <item>PRDCT</item>
+          <item>BCEQU</item>
+          <item>NULBC</item>
+          <item>MLCL</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F5" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>MAPFT</item>
+          <item>MLCL</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F6" dir="HtoE">
+      <body>
+        <item>GRNT1</item>
+      </body>
+    </message>
+
+    <message sf="S12F7" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <list>
+            <list>
+              <item>RSINF</item>
+              <item>BINLT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F8" dir="HtoE">
+      <body>
+        <item>MDACK</item>
+      </body>
+    </message>
+
+    <message sf="S12F9" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>STRP</item>
+          <item>BINLT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F10" dir="HtoE">
+      <body>
+        <item>MDACK</item>
+      </body>
+    </message>
+
+    <message sf="S12F11" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <list>
+            <list>
+              <item>XYPOS</item>
+              <item>BINLT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F12" dir="HtoE">
+      <body>
+        <item>MDACK</item>
+      </body>
+    </message>
+
+    <message sf="S12F13" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F14" dir="HtoE" multi="YES">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <list>
+            <list>
+              <item>RSINF</item>
+              <item>BINLT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F15" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F16" dir="HtoE" multi="YES">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>STRP</item>
+          <item>BINLT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F17" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <item>SDBIN</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F18" dir="HtoE" multi="YES">
+      <body>
+        <list>
+          <item>MID</item>
+          <item>IDTYP</item>
+          <list>
+            <list>
+              <item>RSINF</item>
+              <item>BINLT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S12F19" dir="BOTH">
+      <body>
+        <list>
+          <item>MAPER</item>
+          <item>DATLC</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S13F1" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>DSNAME</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F2" dir="BOTH">
+      <body>
+        <list>
+          <item>DSNAME</item>
+          <item>ACKC13</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F3" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>HANDLE</item>
+          <item>DSNAME</item>
+          <item>CKPNT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F4" dir="BOTH">
+      <body>
+        <list>
+          <item>HANDLE</item>
+          <item>DSNAME</item>
+          <item>ACKC13</item>
+          <item>RTYPE</item>
+          <item>RECLEN</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F5" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>HANDLE</item>
+          <item>READLN</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F6" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>HANDLE</item>
+          <item>ACKC13</item>
+          <item>CKPNT</item>
+          <list>
+            <item>FILDAT</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F7" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>HANDLE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F8" dir="BOTH">
+      <body>
+        <list>
+          <item>HANDLE</item>
+          <item>ACKC13</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F9" dir="BOTH" reply="true">
+      <body/>
+    </message>
+
+    <message sf="S13F10" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S13F11" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F12" dir="BOTH">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S13F13" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>TBLTYP</item>
+          <item>TBLID</item>
+          <item>TBLCMD</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>COLHDR</item>
+          </list>
+          <list>
+            <list>
+              <item>TBLELT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F14" dir="BOTH">
+      <body>
+        <list>
+          <item>TBLACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F15" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>TBLTYP</item>
+          <item>TBLID</item>
+          <item>TBLCMD</item>
+          <list>
+            <item>COLHDR</item>
+          </list>
+          <list>
+            <item>TBLELT</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S13F16" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>TBLTYP</item>
+          <item>TBLID</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>COLHDR</item>
+          </list>
+          <list>
+            <list>
+              <item>TBLELT</item>
+            </list>
+          </list>
+          <list>
+            <item>TBLACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S14F1" dir="BOTH" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJTYPE</item>
+          <list>
+            <item>OBJID</item>
+          </list>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+              <item>ATTRRELN</item>
+            </list>
+          </list>
+          <list>
+            <item>ATTRID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F2" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>OBJID</item>
+              <list>
+                <list>
+                  <item>ATTRID</item>
+                  <item>ATTRDATA</item>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F3" dir="BOTH" reply="true" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJTYPE</item>
+          <list>
+            <item>OBJID</item>
+          </list>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F4" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>OBJID</item>
+              <list>
+                <list>
+                  <item>ATTRID</item>
+                  <item>ATTRDATA</item>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F5" dir="BOTH" category="OBJECT">
+      <body>
+        <item>OBJSPEC</item>
+      </body>
+    </message>
+
+    <message sf="S14F6" dir="EtoH" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <item>OBJTYPE</item>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F7" dir="BOTH" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <list>
+            <item>OBJTYPE</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F8" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>OBJTYPE</item>
+              <list>
+                <item>ATTRID</item>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F9" dir="BOTH" multi="YES" reply="true" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJTYPE</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F10" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F11" dir="BOTH" reply="true" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F12" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F13" dir="BOTH" multi="YES" reply="true" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F14" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJTOKEN</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F15" dir="BOTH" multi="YES" reply="true" category="OBJECT">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJCMD</item>
+          <item>OBJTOKEN</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F16" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F17" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJCMD</item>
+          <item>TARGETSPEC</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F18" dir="BOTH" multi="YES" category="OBJECT">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F19" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OPID</item>
+          <item>OBJSPEC</item>
+          <item>SVCNAME</item>
+          <list>
+            <list>
+              <item>SPNAME</item>
+              <item>SPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F20" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>SVCACK</item>
+          <item>LINKID</item>
+          <list>
+            <list>
+              <item>SPNAME</item>
+              <item>SPVAL</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F21" dir="EtoH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OPID</item>
+          <item>LINKID</item>
+          <list>
+            <list>
+              <item>SPNAME</item>
+              <item>SPVAL</item>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F22" dir="HtoE">
+      <body>
+        <item>DATAACK</item>
+      </body>
+    </message>
+
+    <message sf="S14F23" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F24" dir="BOTH">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S14F25" dir="HtoE">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <list>
+            <item>OBJTYPE</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F26" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>OBJTYPE</item>
+              <list>
+                <item>SVCNAME</item>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F27" dir="HtoE">
+      <body>
+        <list>
+          <item>OBJSPEC</item>
+          <item>OBJTYPE</item>
+          <list>
+            <item>SVCNAME</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S14F28" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>SVCNAME</item>
+              <list>
+                <item>SPNAME</item>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>OBJACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S15F1" dir="BOTH" reply="true" category="RECIPE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPSPEC</item>
+          <item>RMDATASIZE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F2" dir="BOTH" category="RECIPE">
+      <body>
+        <item>RMGRNT</item>
+      </body>
+    </message>
+
+    <message sf="S15F3" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RMNSSPEC</item>
+          <item>RMNSCMD</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F4" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F5" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RMNSSPEC</item>
+          <item>RMNEWNS</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F6" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F7" dir="BOTH" reply="true">
+      <body>
+        <item>OBJSPEC</item>
+      </body>
+    </message>
+
+    <message sf="S15F8" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMSPACE</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F9" dir="BOTH" reply="true">
+      <body>
+        <item>RCPSPEC</item>
+      </body>
+    </message>
+
+    <message sf="S15F10" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RCPSTAT</item>
+          <item>RCPVERS</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F11" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RMNSSPEC</item>
+          <item>RCPCLASS</item>
+          <item>RCPNAME</item>
+          <item>AGENT</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F12" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>AGENT</item>
+          <item>RCPVERS</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F13" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPUPDT</item>
+          <item>RCPSPEC</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <item>RCPBODY</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F14" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F15" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPSPEC</item>
+          <item>RCPSECCODE</item>
+          <list>
+            <list>
+              <item>RCPSECNM</item>
+              <list>
+                <list>
+                  <item>RCPATTRID</item>
+                  <item>RCPATTRDATA</item>
+                </list>
+              </list>
+            </list>
+            <item>RCPBODY</item>
+            <list>
+              <list>
+                <item>RCPSECNM</item>
+                <list>
+                  <list>
+                    <item>RCPATTRID</item>
+                    <item>RCPATTRDATA</item>
+                  </list>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F16" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RCPSECCODE</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F17" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RCPSPEC</item>
+          <item>RCPSECCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F18" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>RCPSECNM</item>
+              <list>
+                <list>
+                  <item>RCPATTRID</item>
+                  <item>RCPATTRDATA</item>
+                </list>
+              </list>
+            </list>
+            <item>RCPBODY</item>
+            <list>
+              <list>
+                <item>RCPSECNM</item>
+                <list>
+                  <list>
+                    <item>RCPATTRID</item>
+                    <item>RCPATTRDATA</item>
+                  </list>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F19" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RCPSPEC</item>
+          <item>RCPRENAME</item>
+          <item>RCPNEWID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F20" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F21" dir="BOTH" multi="YES" reply="true" category="RECIPE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPCMD</item>
+          <item>RMNSSPEC</item>
+          <item>OPID</item>
+          <item>AGENT</item>
+          <list>
+            <item>RCPID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F22" dir="BOTH" multi="YES" category="RECIPE">
+      <body>
+        <list>
+          <item>AGENT</item>
+          <item>LINKID</item>
+          <item>RCPCMD</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F23" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <list>
+            <item>RCPID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F24" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <list>
+              <list>
+                <item>RCPDESCNM</item>
+                <item>RCPDESCTIME</item>
+                <item>RCPDESCLTH</item>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F25" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RMNSSPEC</item>
+          <item>AGENT</item>
+          <list>
+            <list>
+              <item>RCPPARNM</item>
+              <item>RCPPARVAL</item>
+              <item>RCPPARRULE</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F26" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F27" dir="HtoE" multi="YES" reply="true" category="RECIPE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPOWCODE</item>
+          <item>RCPSPEC</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <item>RCPBODY</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F28" dir="EtoH" multi="YES" category="RECIPE">
+      <body>
+        <list>
+          <item>RCPID</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F29" dir="HtoE" multi="YES" reply="true" category="RECIPE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OPID</item>
+          <item>RCPSPEC</item>
+          <list>
+            <item>RCPID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F30" dir="EtoH" multi="YES" category="RECIPE">
+      <body>
+        <list>
+          <item>OPID</item>
+          <item>LINKID</item>
+          <item>RCPID</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F31" dir="HtoE" reply="true" category="RECIPE">
+      <body>
+        <item>RCPSPEC</item>
+      </body>
+    </message>
+
+    <message sf="S15F32" dir="EtoH" multi="YES" category="RECIPE">
+      <body>
+        <list>
+          <item>RCPSPEC</item>
+          <list>
+            <list>
+              <item>RCPATTRID</item>
+              <item>RCPATTRDATA</item>
+            </list>
+          </list>
+          <item>RCPBODY</item>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F33" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RESPEC</item>
+          <list>
+            <list>
+              <item>RCPID</item>
+              <list>
+                <list>
+                  <item>RCPPARNM</item>
+                  <item>RCPPARVAL</item>
+                </list>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F34" dir="EtoH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F35" dir="HtoE" multi="YES" reply="true" category="RECIPE">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RESPEC</item>
+          <item>RCPDEL</item>
+          <list>
+            <item>RCPID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F36" dir="EtoH" multi="YES" category="RECIPE">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F37" dir="BOTH" reply="true">
+      <body>
+        <list>
+          <item>RMSEGSPEC</item>
+          <item>OBJTOKEN</item>
+          <item>RMGRNT</item>
+          <item>OPID</item>
+          <item>RCPID</item>
+          <item>RMCHGTYPE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F38" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F39" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RMNSCMD</item>
+          <item>RMRECSPEC</item>
+          <item>RMSEGSPEC</item>
+          <item>OBJTOKEN</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F40" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F41" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RMRECSPEC</item>
+          <item>OBJTOKEN</item>
+          <item>RMNSCMD</item>
+          <list>
+            <item>RCPID</item>
+            <item>RCPNEWID</item>
+            <item>RMSEGSPEC</item>
+            <item>RMCHGTYPE</item>
+            <item>OPID</item>
+            <item>TIMESTAMP</item>
+            <item>RMREQUESTOR</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F42" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F43" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>TARGETSPEC</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F44" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <list>
+            <list>
+              <item>RCPID</item>
+              <item>RCPNEWID</item>
+              <item>RMSEGSPEC</item>
+              <item>RMCHGTYPE</item>
+              <item>OPID</item>
+              <item>TIMESTAMP</item>
+              <item>RMREQUESTOR</item>
+            </list>
+          </list>
+          <list>
+            <item>RMACK</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F45" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RCPSPEC</item>
+          <item>RCPNEWID</item>
+          <item>RMCHGTYPE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F46" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMCHGTYPE</item>
+          <item>RMGRNT</item>
+          <item>OPID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F47" dir="BOTH" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>OBJSPEC</item>
+          <item>RMNSSPEC</item>
+          <item>RMRECSPEC</item>
+          <list>
+            <item>RMSEGSPEC</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S15F48" dir="BOTH" multi="YES">
+      <body>
+        <list>
+          <item>RMACK</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S16F1" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F2" dir="EtoH">
+      <body>
+        <item>GRANT</item>
+      </body>
+    </message>
+
+    <message sf="S16F3" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>MF</item>
+          <list>
+            <item>MID</item>
+          </list>
+          <list>
+            <item>PRRECIPEMETHOD</item>
+            <item>RCPSPEC</item>
+            <list>
+              <list>
+                <item>RCPPARNM</item>
+                <item>RCPPARVAL</item>
+              </list>
+            </list>
+          </list>
+          <item>PRPROCESSSTART</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F4" dir="EtoH">
+      <body>
+        <list>
+          <item>PRJOBID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F5" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>PRJOBID</item>
+          <item>PRCMDNAME</item>
+          <list>
+            <list>
+              <item>CPNAME</item>
+              <item>CPVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F6" dir="EtoH">
+      <body>
+        <list>
+          <item>PRJOBID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F7" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>TIMESTAMP</item>
+          <item>PRJOBID</item>
+          <item>PRJOBMILESTONE</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F8" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S16F9" dir="EtoH" reply="true">
+      <body>
+        <list>
+          <item>PREVENTID</item>
+          <item>TIMESTAMP</item>
+          <item>PRJOBID</item>
+          <list>
+            <list>
+              <item>VID</item>
+              <item>V</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F10" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S16F11" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>PRJOBID</item>
+          <item>MF</item>
+          <list>
+            <list>
+              <item>CARRIERID</item>
+              <list>
+                <item>SLOTID</item>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>PRRECIPEMETHOD</item>
+            <item>RCPSPEC</item>
+            <list>
+              <list>
+                <item>RCPPARNM</item>
+                <item>RCPPARVAL</item>
+              </list>
+            </list>
+          </list>
+          <item>PRPROCESSSTART</item>
+          <item>PRPAUSEEVENT</item>
+        </list>
+      </body>
+    </message>
+
+<!--
+    <message sf="S16F11" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>PRJOBID</item>
+          <item>MF</item>
+          <list>
+            <item>MID</item>
+          </list>
+          <list>
+            <item>PRRECIPEMETHOD</item>
+            <item>RCPSPEC</item>
+            <list>
+              <list>
+                <item>RCPPARNM</item>
+                <item>RCPPARVAL</item>
+              </list>
+            </list>
+          </list>
+          <item>PRPROCESSSTART</item>
+          <item>PRPAUSEEVENT</item>
+        </list>
+      </body>
+    </message>
+-->
+
+    <message sf="S16F12" dir="EtoH">
+      <body>
+        <list>
+          <item>PRJOBID</item>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F13" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>PRJOBID</item>
+              <item>MF</item>
+              <list>
+                <list>
+                  <item>CARRIERID</item>
+                  <list>
+                    <item>SLOTID</item>
+                  </list>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>PRRECIPEMETHOD</item>
+            <item>RCPSPEC</item>
+            <list>
+              <list>
+                <item>RCPPARNM</item>
+                <item>RCPPARVAL</item>
+              </list>
+            </list>
+          </list>
+          <item>PRPROCESSSTART</item>
+          <item>PRPAUSEEVENT</item>
+        </list>
+      </body>
+    </message>
+
+<!--
+    <message sf="S16F13" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>PRJOBID</item>
+              <item>MF</item>
+              <list>
+                <list>
+                  <item>MID</item>
+                </list>
+              </list>
+            </list>
+          </list>
+          <list>
+            <item>PRRECIPEMETHOD</item>
+            <item>RCPSPEC</item>
+            <list>
+              <list>
+                <item>RCPPARNM</item>
+                <item>RCPPARVAL</item>
+              </list>
+            </list>
+          </list>
+          <item>PRPROCESSSTART</item>
+          <item>PRPAUSEEVENT</item>
+        </list>
+      </body>
+    </message>
+-->
+
+    <message sf="S16F14" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+          </list>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F15" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>PRJOBID</item>
+              <item>MF</item>
+              <list>
+                <list>
+                  <item>CARRIERID</item>
+                  <list>
+                    <item>SLOTID</item>
+                  </list>
+                </list>
+              </list>
+              <list>
+                <item>PRRECIPEMETHOD</item>
+                <item>RCPSPEC</item>
+                <list>
+                  <list>
+                    <item>RCPPARNM</item>
+                    <item>RCPPARVAL</item>
+                  </list>
+                </list>
+              </list>
+              <item>PRPROCESSSTART</item>
+              <item>PRPAUSEEVENT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+<!--
+    <message sf="S16F15" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <list>
+            <list>
+              <item>PRJOBID</item>
+              <item>MF</item>
+              <list>
+                <item>MID</item>
+              </list>
+              <list>
+                <item>PRRECIPEMETHOD</item>
+                <item>RCPSPEC</item>
+                <list>
+                  <list>
+                    <item>RCPPARNM</item>
+                    <item>RCPPARVAL</item>
+                  </list>
+                </list>
+              </list>
+              <item>PRPROCESSSTART</item>
+              <item>PRPAUSEEVENT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+-->
+
+    <message sf="S16F16" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+          </list>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F17" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>PRJOBID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F18" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+          </list>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F19" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S16F20" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+            <item>PRSTATE</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F21" dir="HtoE">
+      <body/>
+    </message>
+
+    <message sf="S16F22" dir="EtoH">
+      <body>
+        <item>PRJOBSPACE</item>
+      </body>
+    </message>
+
+    <message sf="S16F23" dir="HtoE">
+      <body>
+        <list>
+          <item>PRJOBID</item>
+          <list>
+            <list>
+              <item>RCPPARNM</item>
+              <item>RCPPARVAL</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F24" dir="EtoH">
+      <body>
+        <list>
+          <item>ACKA</item>
+          <list>
+            <list>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F25" dir="HtoE">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+          </list>
+          <item>PRPROCESSSTART</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F26" dir="EtoH">
+      <body>
+        <list>
+          <list>
+            <item>PRJOBID</item>
+          </list>
+          <list>
+            <item>ACKA</item>
+            <list>
+              <list>
+                <item>ERRCODE</item>
+                <item>ERRTEXT</item>
+              </list>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F27" dir="HtoE">
+      <body>
+        <list>
+          <item>CTLJOBID</item>
+          <item>CTLJOBCMD</item>
+          <list>
+            <item>CPNAME</item>
+            <item>CPVAL</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F28" dir="EtoH">
+      <body>
+        <list>
+          <item>ACKA</item>
+          <list>
+            <item>ERRCODE</item>
+            <item>ERRTEXT</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S16F29" dir="HtoE" reply="true">
+      <body>
+        <item>PRMTRLORDER</item>
+      </body>
+    </message>
+
+    <message sf="S16F30" dir="EtoH">
+      <body>
+        <item>ACKA</item>
+      </body>
+    </message>
+
+    <message sf="S17F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S17F1" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>RPTID</item>
+          <item>DATASRC</item>
+          <list>
+            <item>VID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F2" dir="EtoH">
+      <body>
+        <list>
+          <item>RPTID</item>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F3" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>RPTID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F4" dir="EtoH">
+      <body>
+        <list>
+          <item>ACKA</item>
+          <list>
+            <list>
+              <item>RPTID</item>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F5" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>TRID</item>
+          <item>CEED</item>
+          <list>
+            <item>RPTID</item>
+          </list>
+          <item>TRSPER</item>
+          <list>
+            <item>TOTSMP</item>
+            <item>REPGSZ</item>
+            <item>EVNTSRC</item>
+            <item>CEID</item>
+            <item>EVNTSRC</item>
+            <item>CEID</item>
+            <item>TRAUTOD</item>
+            <item>RPTOC</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F6" dir="EtoH">
+      <body>
+        <list>
+          <item>TRID</item>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F7" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TRID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F8" dir="EtoH">
+      <body>
+        <list>
+          <item>ACKA</item>
+          <list>
+            <list>
+              <item>TRID</item>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F9" dir="HtoE" multi="YES" reply="true">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>EVNTSRC</item>
+          <item>CEID</item>
+          <list>
+            <item>RPTID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F10" dir="EtoH">
+      <body>
+        <list>
+          <item>EVNTSRC</item>
+          <item>CEID</item>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F11" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>EVNTSRC</item>
+          <item>CEID</item>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F12" dir="EtoH">
+      <body>
+        <list>
+          <item>EVNTSRC</item>
+          <item>CEID</item>
+          <item>RPTID</item>
+          <item>ERRCODE</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F13" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TRID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S17F14" dir="EtoH">
+      <body>
+        <list>
+          <item>ACKA</item>
+          <list>
+            <list>
+              <item>TRID</item>
+              <item>ERRCODE</item>
+              <item>ERRTEXT</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F0" dir="BOTH">
+      <body/>
+    </message>
+
+    <message sf="S18F1" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <list>
+            <item>ATTRID</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F2" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <list>
+            <item>ATTRDATA</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F3" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <list>
+            <list>
+              <item>ATTRID</item>
+              <item>ATTRDATA</item>
+            </list>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F4" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>STATUSLIST</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F5" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>DATASEG</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F6" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>DATA</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F7" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>DATASEG</item>
+          <item>DATALENGTH</item>
+          <item>DATA</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F8" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>STATUSLIST</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F9" dir="HtoE" reply="true">
+      <body>
+        <item>TARGETID</item>
+      </body>
+    </message>
+
+    <message sf="S18F10" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>MID</item>
+          <item>STATUSLIST</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F11" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>MID</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F12" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>STATUSLIST</item>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F13" dir="HtoE" reply="true">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSCMD</item>
+          <list>
+            <item>CPVAL</item>
+          </list>
+        </list>
+      </body>
+    </message>
+
+    <message sf="S18F14" dir="EtoH">
+      <body>
+        <list>
+          <item>TARGETID</item>
+          <item>SSACK</item>
+          <item>STATUSLIST</item>
+        </list>
+      </body>
+    </message>
+
+
+
+
+    <message sf="S20F1" dir="EtoH">
+      <body>
+        <list>
+          <item>DATAID</item>
+          <item>DATA</item>
+          <item>DATALENGTH</item>
+        </list>
+      </body>
+    </message>
+ 
+
+  <message sf="S21F1" dir="EtoH">
+    <body>
+      <list>
+        <item>DATAID</item>
+        <item>DATA</item>
+        <item>DATALENGTH</item>
+      </list>
+    </body>
+  </message>
+
+  <message sf="S22F1" dir="EtoH">
+    <body>
+      <list>
+        <item>DATAID</item>
+        <item>DATA</item>
+        <item>DATALENGTH</item>
+      </list>
+    </body>
+  </message>
+  </messages>
+  
+</secs>
